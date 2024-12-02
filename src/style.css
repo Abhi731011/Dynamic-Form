@@ -1,0 +1,182 @@
+/* General Styles */
+body {
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  h1, h2 {
+    color: #444;
+  }
+  
+  /* Dynamic Form Container */
+  .dynamic-form-container {
+    max-width: 600px;
+    margin: 30px auto;
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dynamic-form-container h1 {
+    margin-bottom: 20px;
+    font-size: 26px;
+    text-align: center;
+  }
+  
+  .dynamic-form-container h2 {
+    margin-top: 30px;
+    font-size: 20px;
+  }
+  
+  /* Form Layout */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .form-field label {
+    font-weight: 500;
+    font-size: 15px;
+  }
+  
+  .form-field input,
+  .form-field select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+    box-sizing: border-box;
+  }
+  
+  .form-field input:focus,
+  .form-field select:focus {
+    border-color: #4caf50;
+    outline: none;
+  }
+  
+  /* Uniform Input Sizes */
+  form input[type="text"],
+  form input[type="number"],
+  form input[type="password"],
+  form input[type="date"],
+  form select {
+    width: 100%;
+  }
+  
+  /* Submit Button */
+  form button {
+    background: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  form button:hover {
+    background: #45a049;
+  }
+  
+  /* Progress Bar */
+  .progress-bar {
+    width: 100%;
+    background: #e0e0e0;
+    border-radius: 20px;
+    height: 12px;
+    margin-bottom: 15px;
+  }
+  
+  .progress-bar-fill {
+    height: 100%;
+    background: #4caf50;
+    border-radius: 20px;
+    transition: width 0.3s ease;
+  }
+  
+  /* Table Styles */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  table th,
+  table td {
+    text-align: left;
+    padding: 12px;
+    font-size: 14px;
+  }
+  
+  table th {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  table td {
+    border-bottom: 1px solid #ddd;
+  }
+  
+  table tr:last-child td {
+    border-bottom: none;
+  }
+  
+  table button {
+    padding: 6px 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  table button.edit {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  table button.delete {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  table button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .dynamic-form-container {
+      padding: 20px;
+    }
+  
+    form button {
+      font-size: 14px;
+      padding: 10px;
+    }
+  
+    table th, table td {
+      font-size: 13px;
+    }
+  }
+  
